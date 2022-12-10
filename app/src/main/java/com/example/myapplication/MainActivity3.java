@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 public class MainActivity3 extends AppCompatActivity {
 
-    private ImageView img;
-    private TextView txt;
-    private Button btn;
+    private ImageView img,img2,img3;
+    private TextView txt,txt2,txt3;
+    private Button btn,btn2,btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,12 @@ public class MainActivity3 extends AppCompatActivity {
         txt = findViewById(R.id.textProduct);
         btn = findViewById(R.id.buttonListPresentation);
 
+
         Intent bund = getIntent();
         img.setImageResource(bund.getIntExtra("img",0));
         txt.setText(bund.getStringExtra("title"));
+
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,8 +38,6 @@ public class MainActivity3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
     }
 }

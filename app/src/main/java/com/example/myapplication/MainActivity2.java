@@ -22,7 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         btn1 = findViewById(R.id.buttonList);
         btn2 = findViewById(R.id.buttonList2);
-        btn2 = findViewById(R.id.buttonList3);
+        btn3 = findViewById(R.id.buttonList3);
 
         t1 = (TextView) findViewById(R.id.textView1);
         t2 = (TextView) findViewById(R.id.textView2);
@@ -48,14 +48,18 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent int2 = new Intent(getApplicationContext() , MainActivity3.class);
+                int2.putExtra("title",t2.getText().toString());
+                int2.putExtra("img",R.drawable.i2);
                 startActivity(int2);
             }
         });
 
-        btn2.setOnClickListener(new View.OnClickListener() {
+        btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent int3 = new Intent(getApplicationContext() , MainActivity3.class);
+                int3.putExtra("title",t3.getText().toString());
+                int3.putExtra("img",R.drawable.i3);
                 startActivity(int3);
             }
         });
