@@ -3,7 +3,7 @@
     <string name="viewName">Nombre</string>
     <string name="viewPass">Contraseña</string>
     <string name="viewLast">Apellido</string>
-    <string name="submit">Enviar</string>
+    <string name="submit">Home</string>
     <string name="title">Bienvenido</string>textButton2
     <string name="textButton2">Regresar</string>
     <string name="saludo">Bienvenido</string>
