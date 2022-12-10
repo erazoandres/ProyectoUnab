@@ -9,8 +9,12 @@
     <string name="saludo">Bienvenido</string>
 
     <string name="titleList" > Gallery </string>
-    <string name="item1" > Item 1 </string>
-    <string name="item2" > Item 2 </string>
-    <string name="item3" > Item 3 </string>
+    <string name="item1" > Naruto</string>
+    <string name="item2" > Uzumaki </string>
+    <string name="item3" > One Piece</string>
+
+    <string name="btnText">Ver detalles</string>
+
+    <string name="imgdesc">is a photo</string>
 
 </resources>
