@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/textView0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView"
@@ -40,7 +40,7 @@
                     tools:src="@drawable/i1" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -68,7 +68,7 @@
                     tools:src="@drawable/i2" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="TextView" />
@@ -94,10 +94,10 @@
                     tools:src="@drawable/i3" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:text="textView3" />
 
                 <Button
                     android:id="@+id/buttonList3"
