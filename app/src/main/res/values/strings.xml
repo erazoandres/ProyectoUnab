@@ -8,4 +8,9 @@
     <string name="textButton2">Regresar</string>
     <string name="saludo">Bienvenido</string>
 
+    <string name="titleList" > Gallery </string>
+    <string name="item1" > Item 1 </string>
+    <string name="item2" > Item 2 </string>
+    <string name="item3" > Item 3 </string>
+
 </resources>
