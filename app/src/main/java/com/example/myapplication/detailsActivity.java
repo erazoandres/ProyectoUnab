@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainActivity3 extends AppCompatActivity {
+public class detailsActivity extends AppCompatActivity {
 
     private ImageView img,img2,img3;
     private TextView txt,txt2,txt3;
@@ -18,11 +18,9 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
+        setContentView(R.layout.details);
 
-        img = findViewById(R.id.imageProduct);
-        txt = findViewById(R.id.textProduct);
-        btn = findViewById(R.id.buttonListPresentation);
+
 
 
         Intent bund = getIntent();
@@ -30,11 +28,10 @@ public class MainActivity3 extends AppCompatActivity {
         txt.setText(bund.getStringExtra("title"));
 
 
-
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
+                Intent intent = new Intent(getApplicationContext(), listActivity.class);
                 startActivity(intent);
             }
         });
