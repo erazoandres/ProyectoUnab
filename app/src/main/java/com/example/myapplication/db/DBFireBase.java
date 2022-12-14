@@ -1,7 +1,17 @@
 package com.example.myapplication.db;
 
+import static android.content.ContentValues.TAG;
+
+import android.util.Log;
+
+import androidx.annotation.NonNull;
+
 import com.example.myapplication.entities.Producto;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,6 +33,30 @@ public class DBFireBase {
 
         // Add a new document with a generated ID
         db.collection("productos").add(prod) ;
+    }
+
+
+    public void getData(){
+        db.collection("users")
+        .get()
+            .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                    if (task.isSuccessful()) {
+                        for (QueryDocumentSnapshot document : task.getResult()) {
+
+                            Producto producto = new Producto(
+                                     document.getData().get("name").toString(),
+                                    document.getData().get("descr").toString(),
+                                    Integer.parseInt(document.getData().get("price").toString()),
+                                    Integer.parseInt(document.getData().get("image").toString())
+                            ) ;
+                        }
+                    } else {
+                        Log.w(TAG, "Error getting documents.", task.getException());
+                    }
+                }
+        });
     }
 
 
