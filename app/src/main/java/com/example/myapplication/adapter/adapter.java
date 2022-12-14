@@ -46,7 +46,7 @@ public class adapter extends BaseAdapter{
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
         view = layoutInflater.inflate(R.layout.details,null);
 
-        ImageView image = (ImageView) view.findViewById(R.id.imageView9);
+        ImageView image = (ImageView) view.findViewById(R.id.image);
         TextView textName = (TextView) view.findViewById(R.id.textName);
         TextView textDescription = (TextView) view.findViewById(R.id.textDescription);
         TextView textPrice = (TextView) view.findViewById(R.id.textPrice);
