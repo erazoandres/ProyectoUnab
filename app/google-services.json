@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "846005083787",
+    "project_id": "basdatos-76d1b",
+    "storage_bucket": "basdatos-76d1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846005083787:android:257be5050622010e7e3e8e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "846005083787-4m0rd6odkqjul4tg4k2b01afi6p0blo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwDCwDXVElsU534s4oVe103mRZLxpWf4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "846005083787-4m0rd6odkqjul4tg4k2b01afi6p0blo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
