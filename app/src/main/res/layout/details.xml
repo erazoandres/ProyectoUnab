@@ -20,7 +20,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/textName"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -28,14 +28,14 @@
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/textDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/textPrice"
             android:layout_width="wrap_content"
             android:layout_weight="1"
             android:layout_height="wrap_content"
