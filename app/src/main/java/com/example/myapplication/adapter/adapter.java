@@ -1,7 +1,6 @@
 package com.example.myapplication.adapter;
 
 import android.content.Context;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,16 +9,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.myapplication.R;
-import com.example.myapplication.entities.producto;
+import com.example.myapplication.entities.Producto;
 
 import java.util.ArrayList;
 
 public class adapter extends BaseAdapter{
 
     private Context context;
-    private ArrayList<producto> arrayProduct;
+    private ArrayList<Producto> arrayProduct;
 
-    public adapter(Context context, ArrayList<producto> arrayProduct) {
+    public adapter(Context context, ArrayList<Producto> arrayProduct) {
         this.context = context;
         this.arrayProduct = arrayProduct;
     }
@@ -36,8 +35,9 @@ public class adapter extends BaseAdapter{
     }
 
     @Override
-    public long getItemId(int i) {
-        return 0;
+    public long getItemId(int i)
+    {
+        return Long.valueOf(arrayProduct.get(i).getName());
     }
 
     @Override
@@ -51,7 +51,7 @@ public class adapter extends BaseAdapter{
         TextView textDescription = (TextView) view.findViewById(R.id.textDescription);
         TextView textPrice = (TextView) view.findViewById(R.id.textPrice);
 
-        producto products1 = arrayProduct.get(i);
+        Producto products1 = arrayProduct.get(i);
 
         image.setImageResource(products1.getImage());
         textName.setText(products1.getName());

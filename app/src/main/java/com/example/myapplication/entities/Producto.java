@@ -1,14 +1,14 @@
 package com.example.myapplication.entities;
 
-public class producto {
+public class Producto {
     String name;
     String Description;
     int price;
     int image;
 
-    public producto(String name, String description, int price, int image) {
+    public Producto(String name, String description, int price, int image) {
         this.name = name;
-        Description = description;
+        this.Description = description;
         this.price = price;
         this.image = image;
     }
