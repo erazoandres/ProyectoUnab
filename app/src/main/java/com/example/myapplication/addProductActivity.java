@@ -2,15 +2,12 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class detailsActivity extends AppCompatActivity {
+public class addProductActivity extends AppCompatActivity {
 
     private ImageView img;
     private TextView txt1,txt2,txt3;
@@ -18,7 +15,7 @@ public class detailsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.details);
+        setContentView(R.layout.add_product);
 
         img = findViewById(R.id.image);
         txt1 = findViewById(R.id.textName);
