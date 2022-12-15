@@ -7,8 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.myapplication.adapter.adapter;
@@ -65,8 +63,7 @@ public class listActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.item:
-                Intent intent = new Intent(getApplicationContext() , detailsActivity.class);
-                intent.putExtra("name",intent.getData().toString());
+                Intent intent = new Intent(getApplicationContext() , add_form.class);
                 startActivity(intent);
                 return true;
             default:
