@@ -63,7 +63,12 @@ public class listActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.item:
+<<<<<<< HEAD
                 Intent intent = new Intent(getApplicationContext() , add_form.class);
+=======
+                Intent intent = new Intent(getApplicationContext() , addProductActivity.class);
+                intent.putExtra("name","");
+>>>>>>> 14fe2f2efe2dee95a7e0b54e6c21182158499826
                 startActivity(intent);
                 return true;
             default:

@@ -59,7 +59,7 @@ public class adapter extends BaseAdapter{
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         LayoutInflater layoutInflater = LayoutInflater.from(this.context);
-        view = layoutInflater.inflate(R.layout.details,null);
+        view = layoutInflater.inflate(R.layout.add_product,null);
 
         ImageView image = (ImageView) view.findViewById(R.id.image);
         TextView textName = (TextView) view.findViewById(R.id.textName);
