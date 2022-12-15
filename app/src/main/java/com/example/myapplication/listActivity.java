@@ -36,8 +36,11 @@ public class listActivity extends AppCompatActivity {
         Producto producto2 = new Producto("fresa","fruta",19000,R.drawable.i2);
         Producto producto3 = new Producto("mora","fruta",18000,R.drawable.i3);
 
-/*
+
         bd.insertData(producto1);
+        bd.insertData(producto2);
+        bd.insertData(producto3);
+/*
         bd.insertData(producto2);
         bd.insertData(producto3);
         arrayList.add(producto1);

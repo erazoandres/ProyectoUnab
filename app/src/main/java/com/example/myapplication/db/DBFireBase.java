@@ -14,6 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,11 +39,12 @@ public class DBFireBase {
 
 
     public void getData(adapter adapter){
-        db.collection("`product`").get()
+        db.collection("productos").get()
             .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
                     if (task.isSuccessful()) {
+                        ArrayList<Producto> listaProd = new ArrayList<>();
                         for (QueryDocumentSnapshot document : task.getResult()) {
 
                             Producto producto = new Producto(
@@ -51,7 +53,12 @@ public class DBFireBase {
                                     Integer.parseInt(document.getData().get("price").toString()),
                                     Integer.parseInt(document.getData().get("image").toString())
                             ) ;
+                            listaProd.add(producto);
                         }
+
+                        adapter.setArrayProduct(listaProd);
+                        adapter.notifyDataSetChanged();
+
                     } else {
                         Log.w(TAG, "Error getting documents.", task.getException());
                     }

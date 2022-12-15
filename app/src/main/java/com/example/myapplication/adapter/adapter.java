@@ -18,6 +18,11 @@ public class adapter extends BaseAdapter{
     private Context context;
     private ArrayList<Producto> arrayProduct;
 
+    public adapter(Context context, ArrayList<Producto> arrayProduct) {
+        this.context = context;
+        this.arrayProduct = arrayProduct;
+    }
+
     public Context getContext() {
         return context;
     }
@@ -33,12 +38,6 @@ public class adapter extends BaseAdapter{
     public void setArrayProduct(ArrayList<Producto> arrayProduct) {
         this.arrayProduct = arrayProduct;
     }
-
-    public adapter(Context context, ArrayList<Producto> arrayProduct) {
-        this.context = context;
-        this.arrayProduct = arrayProduct;
-    }
-
 
     @Override
     public int getCount() {
