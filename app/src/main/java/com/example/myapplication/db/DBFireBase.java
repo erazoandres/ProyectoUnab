@@ -6,6 +6,7 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.example.myapplication.adapter.adapter;
 import com.example.myapplication.entities.Producto;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -36,9 +37,8 @@ public class DBFireBase {
     }
 
 
-    public void getData(){
-        db.collection("users")
-        .get()
+    public void getData(adapter adapter){
+        db.collection("`product`").get()
             .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {

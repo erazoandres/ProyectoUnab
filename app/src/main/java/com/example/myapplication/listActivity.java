@@ -36,18 +36,18 @@ public class listActivity extends AppCompatActivity {
         Producto producto2 = new Producto("fresa","fruta",19000,R.drawable.i2);
         Producto producto3 = new Producto("mora","fruta",18000,R.drawable.i3);
 
-
-
+/*
         bd.insertData(producto1);
         bd.insertData(producto2);
         bd.insertData(producto3);
-
         arrayList.add(producto1);
         arrayList.add(producto2);
         arrayList.add(producto3);
-
+*/
         adapter = new adapter(this , arrayList);
         listView.setAdapter(adapter);
+
+        bd.getData(adapter);
 
     }
 }

@@ -18,6 +18,22 @@ public class adapter extends BaseAdapter{
     private Context context;
     private ArrayList<Producto> arrayProduct;
 
+    public Context getContext() {
+        return context;
+    }
+
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
+    public ArrayList<Producto> getArrayProduct() {
+        return arrayProduct;
+    }
+
+    public void setArrayProduct(ArrayList<Producto> arrayProduct) {
+        this.arrayProduct = arrayProduct;
+    }
+
     public adapter(Context context, ArrayList<Producto> arrayProduct) {
         this.context = context;
         this.arrayProduct = arrayProduct;
