@@ -1,9 +1,12 @@
 package com.example.myapplication;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -31,16 +34,14 @@ public class listActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.listViewProducts);
         arrayList = new ArrayList<>();
         bd = new DBFireBase();
-
+/*
         Producto producto1 = new Producto("Coco","fruta",12000,R.drawable.i1);
         Producto producto2 = new Producto("fresa","fruta",19000,R.drawable.i2);
         Producto producto3 = new Producto("mora","fruta",18000,R.drawable.i3);
 
-
         bd.insertData(producto1);
         bd.insertData(producto2);
         bd.insertData(producto3);
-/*
         bd.insertData(producto2);
         bd.insertData(producto3);
         arrayList.add(producto1);
@@ -52,5 +53,25 @@ public class listActivity extends AppCompatActivity {
 
         bd.getData(adapter);
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu); ;
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item:
+                Intent intent = new Intent(getApplicationContext() , detailsActivity.class);
+                intent.putExtra("name",intent.getData().toString());
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+
+        }
     }
 }

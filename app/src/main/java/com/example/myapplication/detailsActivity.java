@@ -26,10 +26,11 @@ public class detailsActivity extends AppCompatActivity {
         txt3 = findViewById(R.id.textPrice);
 
         Intent intent = getIntent();
+        txt1.setText(intent.getStringExtra("name"));
 
-       /* txt1.setText(intent.getStringExtra("name"));
+        /*
         txt2.setText(intent.getStringExtra("descr"));
         txt3.setText(intent.getStringExtra("price"));
-*/
+        */
     }
 }
