@@ -56,19 +56,40 @@
                     android:layout_height="wrap_content"
                     android:inputType="number" />
 
-                <Button
-                    android:id="@+id/buttonBack"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Add" />
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/buttonRetroceder"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="Back" />
+                    <Button
+                        android:id="@+id/buttonBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:backgroundTint="#00b347"
+                        android:text="Add" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="20dp"
+                        android:backgroundTint="#ff0000"
+                        android:text="DELETE" />
+
+                    <Button
+                        android:id="@+id/buttonRetroceder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_gravity="center"
+                        android:text="Back" />
+
+                </LinearLayout>
 
             </LinearLayout>
 
