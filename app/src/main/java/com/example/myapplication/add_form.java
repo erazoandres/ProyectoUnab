@@ -51,7 +51,5 @@ public class add_form extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
     }
 }
