@@ -18,7 +18,7 @@ public class add_form extends AppCompatActivity {
     private EditText name;
     private EditText description;
     private EditText price;
-    private Button btnBack;
+    private Button btnBack , buttonRetroceder;
     private DBFireBase bd;
 
     @Override
@@ -32,6 +32,7 @@ public class add_form extends AppCompatActivity {
         description = (EditText) findViewById(R.id.editDescription);
         price = (EditText) findViewById(R.id.editPrice);
         btnBack = (Button) findViewById(R.id.buttonBack);
+        buttonRetroceder = (Button) findViewById(R.id.buttonRetroceder);
         bd = new DBFireBase();
 
 
@@ -49,6 +50,14 @@ public class add_form extends AppCompatActivity {
 
                 Intent intent = new Intent(getApplicationContext() , listActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        buttonRetroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2  = new Intent(getApplicationContext() , listActivity.class);
+                startActivity(intent2);
             }
         });
     }
