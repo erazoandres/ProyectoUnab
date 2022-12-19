@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.example.myapplication.R;
 import com.example.myapplication.entities.Producto;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 

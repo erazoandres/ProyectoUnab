@@ -72,14 +72,6 @@
                         android:backgroundTint="#00b347"
                         android:text="Add" />
 
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_margin="20dp"
-                        android:backgroundTint="#ff0000"
-                        android:text="DELETE" />
 
                     <Button
                         android:id="@+id/buttonRetroceder"

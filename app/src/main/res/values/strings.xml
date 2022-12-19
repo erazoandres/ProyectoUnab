@@ -8,6 +8,8 @@
     <string name="textButton2">Regresar</string>
     <string name="saludo">Bienvenido</string>
 
+    <string name="imageavatar">imagenavatar</string>
+
     <string name="titleList"> Gallery </string>
     <string name="item1"> Naruto</string>
     <string name="item2"> Uzumaki </string>
